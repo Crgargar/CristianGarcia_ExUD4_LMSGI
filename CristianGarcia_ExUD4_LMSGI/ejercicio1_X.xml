@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Empresa xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ejercicio1.xsd">
+  <sucursal codigo="A1234567">
+      <zonaexposicion>
+          <articulo>123</articulo>
+          <albaran>22</albaran>
+      </zonaexposicion>
+      <gestion>
+          <pago>transferencia</pago>
+      </gestion>
+      <nombreTrabajador>Juan</nombreTrabajador>
+      <fechapedido>14/02/2022</fechapedido>
+      <datoPedido>urgente</datoPedido>
+      <articulos codigo="AAA-333">
+          <UnidadesPedidas>2</UnidadesPedidas>
+          <precio>12</precio>
+          <observacionArticulo>estado perfecto</observacionArticulo>
+          <plazo>2 semanas</plazo>
+      </articulos>
+  </sucursal>
+  <sucursal codigo="B1234567">
+      <zonaexposicion>
+          <articulo>23</articulo>
+          <albaran>125</albaran>
+      </zonaexposicion>
+      <gestion>
+          <pago>paypal</pago>
+      </gestion>
+      <nombreTrabajador>Antonio</nombreTrabajador>
+      <fechapedido>13/05/2022</fechapedido>
+      <datoPedido>incompleto</datoPedido>
+      <articulos codigo="CCC -555">
+          <UnidadesPedidas>1</UnidadesPedidas>
+          <precio>20</precio>
+          <observacionArticulo>estado deteriorado</observacionArticulo>
+          <plazo>3 semanas</plazo>
+      </articulos>
+  </sucursal>
+</Empresa>

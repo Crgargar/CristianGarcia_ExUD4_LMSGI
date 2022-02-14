@@ -1,0 +1,17 @@
+<?xml encoding="UTF-8"?>
+<!ELEMENT Empresa (sucursal)+>
+<!ELEMENT sucursal (zonaexposicion,gestion,nombreTrabajador,fechapedido, datoPedido,articulos)>
+<!ELEMENT zonaexposicion (articulo,albaran)>
+<!ATTLIST sucursal cogido ID #sucursal>
+<!ELEMENT gestion (pago)>
+<!ELEMENT nombreTrabajador (#PCDATA)>
+<!ELEMENT fechapedido (#PCDATA)>
+<!ELEMENT datoPedido (#PCDATA)>
+<!ELEMENT articulos (UnidadesPedidas,precio,observacionArticulo,plazo)>
+<!ELEMENT articulo (#PCDATA)>
+<!ELEMENT albaran (#PCDATA)>
+<!ELEMENT pago (#PCDATA)>
+<!ELEMENT UnidadesPedidas (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT observacionArticulo (#PCDATA)>
+<!ELEMENT plazo (#PCDATA)>

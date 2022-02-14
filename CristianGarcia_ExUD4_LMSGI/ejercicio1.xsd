@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="Empresa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="sucursal"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sucursal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="zonaexposicion"/>
+        <xs:element ref="gestion"/>
+        <xs:element ref="nombreTrabajador"/>
+        <xs:element ref="fechapedido"/>
+        <xs:element ref="datoPedido"/>
+        <xs:element ref="articulos"/>
+      </xs:sequence>
+      <xs:attribute name="codigo" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="zonaexposicion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="articulo"/>
+        <xs:element ref="albaran"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="articulo" type="xs:integer"/>
+  <xs:element name="albaran" type="xs:integer"/>
+  <xs:element name="gestion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pago"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="pago" type="xs:NCName"/>
+  <xs:element name="nombreTrabajador" type="xs:NCName"/>
+  <xs:element name="fechapedido" type="xs:string"/>
+  <xs:element name="datoPedido" type="xs:NCName"/>
+  <xs:element name="articulos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="UnidadesPedidas"/>
+        <xs:element ref="precio"/>
+        <xs:element ref="observacionArticulo"/>
+        <xs:element ref="plazo"/>
+      </xs:sequence>
+      <xs:attribute name="codigo" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UnidadesPedidas" type="xs:integer"/>
+  <xs:element name="precio" type="xs:integer"/>
+  <xs:element name="observacionArticulo" type="xs:string"/>
+  <xs:element name="plazo" type="xs:string"/>
+</xs:schema>
